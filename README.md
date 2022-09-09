@@ -92,6 +92,12 @@ To stop docker container
 docker stop <container_ID>
 ```
 
+To create the CI/CD pipeline in github, we need to add the Heroku email, API key, and Heroku app name for yaml file.
+
+We can add these details to the github repo where we are working. Navigate to Settings of the repo, then click on "Secrets" in the left pane, then click on "Actions". Add HEROKU_EMAIL, HEROKU_APP_NAME, API_KEY in the secrets of the repo.
+
+
+
 
 
 
