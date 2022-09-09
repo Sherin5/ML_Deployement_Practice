@@ -28,6 +28,15 @@ cd <env_name>
 ```
 source bin/activate
 ```
+Step 6: Create a requirements.txt file and add all the dependencies in it
+Step 7: Install all the requirements from the requirements.txt file
+```
+pip install -r requirements.txt
+```
+Step 8: Create the basic app.py file and check by running
+```
+python app.py
+```
 
 
 
