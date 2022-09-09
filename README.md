@@ -21,9 +21,11 @@ Step 4: Open the repo in VS code in your local terminal. You should see the read
 Step 5: Create a virual env
 ```
 virtualenv <env_name>
-
+```
+```
 cd <env_name>
-
+```
+```
 source bin/activate
 ```
 
