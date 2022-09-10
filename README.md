@@ -112,7 +112,9 @@ Step 19: Once the setup file reads all the packages required for the project the
 ```
 python setup.py install
 ```
-
+Step 20: The packages parameter in the setup function in setup.py will look for all the __init__.py in the folder
+Package is where we have __init__.py --> Folder name
+python file i called as module --> File name
 
 
 
