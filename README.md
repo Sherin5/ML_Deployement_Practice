@@ -63,7 +63,7 @@ Now we want to create a variable with the port
 ```
 EXPOSE $PORT
 ```
-Run the flask app. Here we are binding our local IP and using the port generated in the variable. The first app in app:app is the name of the application file and the second is the name of the object in our application. Here our flask app is called app. This is the second app.
+Step 14: Run the flask app. Here we are binding our local IP and using the port generated in the variable. The first app in app:app is the name of the application file and the second is the name of the object in our application. Here our flask app is called app. This is the second app.
 ```
 CMD gunicorn --workers=4 --bind 0.0.0.0:$PORT app:app
 ```
@@ -92,12 +92,17 @@ To stop docker container
 docker stop <container_ID>
 ```
 
-To create the CI/CD pipeline in github, we need to add the Heroku email, API key, and Heroku app name for yaml file.
+Step 15: To create the CI/CD pipeline in github, we need to add the Heroku email, API key, and Heroku app name for yaml file.
 
 We can add these details to the github repo where we are working. Navigate to Settings of the repo, then click on "Secrets" in the left pane, then click on "Actions". Add HEROKU_EMAIL, HEROKU_APP_NAME, API_KEY in the secrets of the repo.
 
+Once the yaml file has been updated and the changes pushed to github, we can then navigate to "actions" on github repo and it should automatically start the build of  the CI/CD pileline
 
-
+Step 16: Ideally, after the development of the project is done, then we need to kill the docker container. The command to kill all the containers is :
+```
+docker rm $(docker ps -a -q)
+```
+This will return all the containers that were active
 
 
 
