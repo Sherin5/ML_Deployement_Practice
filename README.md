@@ -104,6 +104,16 @@ docker rm $(docker ps -a -q)
 ```
 This will return all the containers that were active
 
+Step 17: Create a setup.py file
+
+Setp 18: Create a folder with the project name and add a __init__.py file in the folder. The __init__.py file signals that this file is a python package / module. This will enable us to import all these folder into other files.
+
+Step 19: Once the setup file reads all the packages required for the project then it will install all the required libraries. We dont need to run pip install -r requirements.txt. Instead we use:
+```
+python setup.py install
+```
+
+
 
 
 
