@@ -116,6 +116,10 @@ Step 20: The packages parameter in the setup function in setup.py will look for 
 Package is where we have __init__.py --> Folder name
 python file i called as module --> File name
 
+Step 21: Create all the child folders
+
+Step 22: 
+
 
 
 
