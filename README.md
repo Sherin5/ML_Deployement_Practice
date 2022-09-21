@@ -118,7 +118,45 @@ python file i called as module --> File name
 
 Step 21: Create all the child folders
 
-Step 22: 
+Step 22: __repr__ is used when we are not using print in the function and __str__ is used when we are using inside a print function.
+```
+class demo:
+    def __str__(self):
+        return "Test123"
+
+    def __repr__(self):
+        return "test456"
+```
+
+Step 23: The components of machine learning pipeline are:
+    1.  Data Ingestion -> Bring data into the system, split data into train and test
+    2.  Data Validation -> Schema validation -> file name, no of columns, data type of the columns, Null check, outliers, Imblanced dataset, Perform EDA
+    3.  Data transformation -> Feature engineering -> standard scaler, one hot encoding
+    4.  Model training -> Model selection, hyperparameter tuning
+    5.  Model Evaluation -> Test data for model evaluation, model scoring, model performance
+    6.  Push model
+
+Step 24: The data that we get from the components is pushed into Entity as artefacts. Its the same with config as well
+
+Step 25: If you need to install the ipykernal:
+```
+pip install ipykernel
+```
+
+Step 26: Once we create a config variables in the entity folder, then we will use yaml file to create these variables. Config files help us save all these info in the config.yaml file.
+
+Step 27: We created a util.py file to create helper functions. These helper functions can then be accessed from other files. 
+
+Step 28: Initially we learnt to split the data only into train and test, however in live projects we do a split based on train, valid, and test. The model is intitally fitted on the training dataset, the hyperparameter tuning happens on the validation dataset and finally the model performance is gauged on the test dataset.
+
+Step 29: Important step to note is that while we do a train, valid, and test split, we may apply some data transformation steps to the train and valid data. So when we add the test data, it also needs to be transformed. As such we can create a pickle model of the transformation steps. With this we can pass the test data through the pickled model for data transformation steps and also through another pickled model for the ML algo.
+
+Step 30: We create the entity and config for the ML pipeline. These include Data ingestion, Data validation, Data transformation, Model training, Model evaluation, Push Model
+
+
+
+
+
 
 
 
