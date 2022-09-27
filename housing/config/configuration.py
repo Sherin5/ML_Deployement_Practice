@@ -6,7 +6,7 @@ from housing.constant import *
 from housing.exception import HousingException
 import os, sys
 
-class configuration:
+class Configuration:
     def __init__(self,config_file_path: str=CONFIG_FILE_PATH, current_time_stamp:str=CURRENT_TIME_STAMP):
         try:
             self.config_info = read_yaml_file(config_file_path)
